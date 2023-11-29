@@ -1,20 +1,36 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-    <script src="./assets/js/index.js"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="./assets/css/index.css"> 
+    <script src="./assets/js/index.js" defer></script>
 </head>
-
 <body>
-    <h1>Product!</h1>
-    <div class="container"></div>
-</body>
+    <header>
+        <h1>Product Catalog</h1>
+    </header>
 
+    <section id="search-and-filter">
+        <input type="text" id="search-box" placeholder="Search products...">
+        <select id="category-filter">
+            <option value="all">All Categories</option>
+            
+        </select>
+    </section>
+
+    <section id="product-list">
+
+    </section>
+
+    <footer id="pagination">
+        <button id="prev-page">&lt;</button>
+        <span id="pagination-control">
+
+        </span>
+        <button id="next-page">&gt;</button>
+    </footer>
+
+</body>
 </html>
