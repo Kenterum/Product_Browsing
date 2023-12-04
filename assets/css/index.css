@@ -45,9 +45,29 @@ header h1 {
 }
 
 #product-list div {
-    background-color: white;
+    background-color: white; 
     padding: 1rem;
     border: 1px solid #ddd;
+}
+#product-list div .prod-text {
+    padding: 1rem;
+    border: none !important;;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+#product-list div.rating-star {
+     background-color: transparent!important;
+    padding: 1rem;
+    border: none !important;;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+#product-list div.stars-container {
+    background-color: transparent!important;
+}
+
+#product-list div.prod-text:hover {
+    background-color: burlywood; 
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .stars-container {
@@ -69,6 +89,7 @@ header h1 {
 #product-list .image {
     width: 80%;
     height: 200px;
+    border: none;
 }
 
 #product-list img {
