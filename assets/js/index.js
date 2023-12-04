@@ -3,10 +3,9 @@ let products = [];
 window.addEventListener('DOMContentLoaded', (event) => {
     fetchProducts();
 });
-
 async function fetchProducts() {
     try {
-        const response = await fetch('https://dummyjson.com/products');
+        const response = await fetch('https://dummyjson.com/products?limit=100');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -38,9 +37,14 @@ function displayProducts(productsToDisplay) {
                 <img src="${product.thumbnail}" alt="${product.title}">
             </div> 
             <p>Price: <span class="prod-value">$${product.price}</span></p>
+            <p>Discount: <span class="prod-value">${product.discountPercentage}%</span></p>
+            <p>Category: <span class="prod-value">${product.category}</span></p>
             <div class='rating-star'>Rating: ${starsHtml}</div>
             <p>Stock: <span class="prod-value">${product.stock}<span></p>
         `;
+        productElement.addEventListener('click', () => {
+            window.location.href = `public/details.html?id=${product.id}`;
+        });
         productList.appendChild(productElement);
     });
     updatePaginationControls();
