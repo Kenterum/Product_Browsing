@@ -2,14 +2,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: whitesmoke;
 }
-
 header {
-    background-color: #333;
+    background-color: seagreen;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+}
+#product-list {
+    background-color: tan;
 }
 p {
     margin: 0;
@@ -110,18 +112,17 @@ header h1 {
     display: flex;
     justify-content: center;
     padding: 1rem;
-    background-color: white;
+    background-color:tan;
 }
 
 #pagination button {
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
-    background-color: #333;
-    color: white;
+    background-color: tomato;
+    color: rgb(255, 255, 255);
     border: none;
     cursor: pointer;
 }
-
 
 #loading-indicator, #error-message {
     text-align: center;
