@@ -51,6 +51,9 @@ header h1 {
     padding: 1rem;
     border: 1px solid #ddd;
 }
+#product-list div .image{
+    background-color: transparent!important;
+}
 #product-list div .prod-text {
     padding: 1rem;
     border: none !important;;
